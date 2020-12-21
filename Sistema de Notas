@@ -1,0 +1,23 @@
+// Igual ou maior que 6 = aprovado
+// Igual ou maior que 3 e menor que 6 = recuperação
+// Menor que 3 = reprovado
+
+let nota1 = 4;
+let nota2 = 2;
+let nota3 = 2;
+let nota4 = 2;
+let media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+let aprovacao = media >= 6;
+let recuperacao = media >= 3 && media < 6;
+let reprovacao = media < 3;
+
+if (aprovacao > recuperacao) {
+    console.log('Aprovado com', media);
+}
+else if (recuperacao > reprovacao) {
+    console.log('Ficou de recuperacao com', media);
+}
+else {
+    console.log('Reprovado com', media);
+}
